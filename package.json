@@ -1,8 +1,8 @@
 {
-  "name": "fortune-2027",
+  "name": "2027 fortune °‧ 𓆝 𓆟 𓆞 ·｡",
   "version": "1.0.0",
   "private": true,
-  "description": "2027 yearly fortune wheel",
+  "description": "2027 yearly fortune wheel inspired by krillion",
   "scripts": {
     "start": "node server.js",
     "reset": "rm -f data/spins.json && echo 'all spins cleared'"
