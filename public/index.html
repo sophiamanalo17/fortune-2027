@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2027 fortune</title>
+  <meta name="description" content="Spin the wheel for your 2027 yearly fortune.">
+  <link rel="preload" href="fonts/Trap-Medium.otf" as="font" type="font/otf" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="locked">
+
+  <!-- 1. start screen -->
+  <header class="hero" id="hero">
+    <div class="hero-band"></div>
+    <div class="hero-inner">
+      <h1 class="hero-title">
+        <span class="t-2027">2027</span>
+        <span class="t-fortune">fortune</span>
+      </h1>
+      <img class="hero-star hero-star-1" src="assets/hero-star-1.svg" alt="">
+      <img class="hero-star hero-star-2" src="assets/hero-star-1.svg" alt="">
+      <img class="hero-star hero-star-3" src="assets/hero-star-1.svg" alt="">
+      <div class="hero-meta">
+        <p>designed by..............sophie manalo</p>
+        <p>last updated............11.10.2026 @10:43 AM</p>
+        <p>updated from..........new york city</p>
+      </div>
+      <button class="btn hero-btn" id="start" type="button">get started</button>
+    </div>
+  </header>
+
+  <!-- 2. the wheel -->
+  <section class="stage" id="stage" aria-label="Fortune wheel">
+    <div class="machine">
+      <div class="wheel" id="wheel">
+        <img class="wheel-disc" src="assets/wheel-2.svg" alt="">
+        <img class="animal" src="assets/fish.png" alt="" style="--a:0;--up:-8.43;--w:204.213;--h:113.103">
+        <img class="animal" src="assets/seastar.png" alt="" style="--a:90;--up:180;--w:150.309;--h:135.381">
+        <img class="animal" src="assets/krill.png" alt="" style="--a:180;--up:37.32;--w:258.14;--h:180.628">
+        <img class="animal" src="assets/squid.png" alt="" style="--a:270;--up:12.8;--w:187.907;--h:103.349">
+      </div>
+      <div class="card">
+        <div class="card-face"><img src="assets/card-2.svg" alt=""></div>
+        <img class="card-star" style="--x:36.13;--y:26.23" src="assets/card-star-tl.svg" alt="">
+        <img class="card-star" style="--x:951.65;--y:26.23" src="assets/card-star-tr.svg" alt="">
+        <img class="card-star" style="--x:36.13;--y:856.14" src="assets/card-star-bl.svg" alt="">
+        <img class="card-star" style="--x:951.65;--y:856.14" src="assets/card-star-br.svg" alt="">
+        <div class="card-hub"><img src="assets/hub.svg" alt=""></div>
+        <p class="card-label card-label-top">2027 yearly fortune</p>
+        <p class="card-label card-label-bottom" aria-hidden="true">2027 yearly fortune</p>
+        <p class="card-label card-label-right" aria-hidden="true">2027 yearly fortune</p>
+        <p class="card-label card-label-left" aria-hidden="true">2027 yearly fortune</p>
+        <div class="card-flower"><img src="assets/flower.png" alt=""></div>
+        <img class="card-clouds" src="assets/clouds.jpg" alt="">
+      </div>
+    </div>
+    <p class="sr-only" id="status" role="status" aria-live="polite"></p>
+  </section>
+
+  <!-- 3. your result -->
+  <section class="result" id="result" hidden>
+    <p class="result-kicker" id="result-kicker">your 2027 fortune</p>
+    <div class="fortunes" id="result-row"></div>
+    <div class="result-actions">
+      <button class="btn btn-sm" id="save-photo" type="button">save photo</button>
+      <button class="btn btn-sm" id="share" type="button">share</button>
+      <button class="btn btn-sm" id="view-all" type="button">view all fortunes</button>
+      <p class="result-note" id="result-note">one fortune per person. come back in 2028 for your next one.</p>
+    </div>
+  </section>
+
+  <!-- 4. all fortunes -->
+  <section class="all" id="all" hidden aria-label="All fortunes">
+    <div class="all-inner">
+      <div class="all-flower"><img src="assets/flower.png" alt=""></div>
+      <span class="burst" style="--x:1730;--y:37"><img src="assets/burst.svg" alt=""></span>
+      <span class="burst" style="--x:1730;--y:81"><img src="assets/burst.svg" alt=""></span>
+      <span class="burst from-bottom" style="--x:12;--b:610"><img src="assets/burst.svg" alt=""></span>
+      <span class="burst from-bottom" style="--x:12;--b:566"><img src="assets/burst.svg" alt=""></span>
+      <div class="fortunes" id="all-rows"></div>
+      <footer class="all-foot">
+        <img class="all-stair" src="assets/poster-stair.svg" alt="">
+        <p class="all-credit"><span class="on-gold">DESIGNED &amp; PRINTED</span> BY SOPHIE MANALO</p>
+        <div class="foot-content">
+          <p class="foot-note">also inspired by my favorite game rn <a href="https://krillion.io/" target="_blank" rel="noopener">krillion</a> ;]</p>
+          <nav class="foot-links" aria-label="Find Sophie online">
+            <a href="https://www.instagram.com/sophialeano/?hl=en" target="_blank" rel="noopener">instagram</a>
+            <a href="https://x.com/sloppopp" target="_blank" rel="noopener">X</a>
+            <a href="https://www.sophiamanalo.com/" target="_blank" rel="noopener">portfolio</a>
+          </nav>
+        </div>
+      </footer>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
